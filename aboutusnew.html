@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset ="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Fjalla+One|Exo|Amatic+SC" rel="stylesheet" type="text/css">
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+
+		<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+		<link rel="stylesheet" href="aboutusdesign.css">
+		
+		
+		<script>
+		    $(window).on("load",function() {
+                $(window).scroll(function() {
+                    $("#footer").each(function() {
+                      /* Check the location of each desired element */
+                      var objectBottom = $(this).offset().top + $(this).outerHeight();
+                      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+                      /* If the element is completely within bounds of the window, fade it in */
+                      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+                        } else { //object goes out of view (scrolling up)
+                        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+                        }
+                    });            
+                    
+                }); $(window).scroll(); //invoke scroll-handler on page-load
+            });
+        </script>		
+	</head>
+	<body>
+	<img alt="full screen background image" src="gradient1.jpg" id="full-screen-background-image">
+
+            <div class="container-fluid">
+				<ul>
+					<li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span></a></li>
+					<li> <a class="active" href="home.html">GenePool </a></li>
+					<li> <a href="aboutusnew.html">About Us </a></li>
+					<a type="button" class="btn btn-info" href= "working_form.html" id="start_header_button">Get Started</a>
+				</ul>
+			</div>
+
+
+
+		<h1 class="genepool">About GenePool</h1>
+		<p class="genepool">
+			GenePool is a website that was conceived by a team of four high school students at the end of a 
+			seven-week intensive <br> coding program powered by Girls Who Code.  Girls Who Code is an organization 
+			trying to close the gender gap in the tech <br>industry.</p>
+		
+		<p class="genepool">	Our website was made with the goals of 
+			identifying illnesses for which individuals would be at risk based on their genetic <br>makeup as 
+			well as their location. With GenePool, we hope to identify and prevent any possible illnesses 
+			in its first stages,<br> or even before its appearance.</p>
+			
+		<p class="genepool">	In the future, we hope GenePool will be able to 
+			take in family medical history as another factor, and create an easy, <br>personalized experience. 
+			Through this, you’ll be able to identify genetic diseases for which you are at risk, as well as 
+			<br>any other members of your family. </p>
+		</p>
+
+		
+		<img src="logo.png" alt="logo" id= "logo">
+		
+		<div class="container">
+		<div id="ourteam">
+			<div class="page-header">
+				<h1>Our Team</h1>
+			</div>
+			<div class="circle">
+			<img src="sierra.jpg">
+			</div>
+			<div class="circle">
+			<img src="hannah.jpg">
+			</div>
+			<div class="circle">
+			<img src="wintana.jpg">
+			</div>
+			<div class="circle">
+			<img src="rachel.jpg">
+			</div>
+
+		<div class="bios">
+			<div class="blurb">
+			<h3> Sierra Bartruff</h3>
+			<p>Sierra is going to be starting her Senior year at Homestead High School. 
+			In her free time she enjoys singing in the shower or while she’s doing her chores. 
+			She also enjoys cooking and baking with friends but not as much alone. Sierra is an 
+			active reader and loves SciFi novels. She currently wishes to 
+			become a ninja and if ninja school doesn't work out, Sierra will try 
+			and get a job in an engineering field.</p>
+			</div>
+			<div class="blurb">
+			<h3> Hannah Chan</h3>
+			<p>Hannah Chan is currently a junior at International High School in San Francisco. 
+			After the seven-week Girls Who Code summer program, Hannah has learned coding and 
+			come to love it. When she’s not doing that, she loves running track and field, 
+			golfing, acting and stage managing theater productions, and is the president of 
+			the Model United Nations club. Some cool things that Hannah’s done is speak at the 
+			United Nations General Assembly and delivered a TEDx talk on education!</p>
+			</div>
+			<div class="blurb">
+			<h3> Wintana Gerima</h3>
+			<p>Wintana Gerima is a rising senior at San Francisco University High School. She 
+			holds a passion for all things related to health/science but also has grown to love 
+			coding through the Girls Who Code program that she has participated in this summer. 
+			She mainly enjoys reading as it is one of her favorite pastimes. She wishes to become more 
+			involved with her Eritrean culture and will hopefully learn Tigrinya at some point in her life. 
+			Wintana does not currently know what she wants to do as her profession but will most probably 
+			go into something related to science.</p>
+			</div>
+			<div class="blurb">
+			<h3> Rachel Wu</h3>
+			<p>Rachel is a student at San Francisco University High School. 
+			She is the concertmistress of her school orchestra and the captain 
+			of the varsity lacrosse team. Rachel loves to cook and bake in her free time. 
+			She loves traveling and taking photographs of the places she visits. She also 
+			dances for fun and loves spending time with her family. Rachel is interested 
+			in the intersection between biology and technology. 
+			She plans to pursue a major in engineering and a minor in computer science.</p>
+			</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<!--<div class="container">-->
+            <!--<button id = "button" onclick="getStart()"> Get Started </button>-->
+		<div id = "footer">
+            <a href="mailto:genepoolhealth@gmail.com" target="_top"><h1 id = "questions" >Questions?</h1></a>
+		</div>
+        
+        <div id = "sanfran">
+            <img id = "bridge" src="bridge.PNG">
+            <p id = "designed"> Proudly designed in San Francisco, CA</p>
+        </div>    
+        </div>
+		
+	</body>
+</html>

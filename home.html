@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+		
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+		<link href='https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:300italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<title> Home Page </title>
+        
+        
+        
+        <script>
+            $(window).on("load",function() {
+                $(window).scroll(function() {
+                    $(".webelieve").each(function() {
+                      /* Check the location of each desired element */
+                      var objectBottom = $(this).offset().top + $(this).outerHeight();
+                      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+                      /* If the element is completely within bounds of the window, fade it in */
+                      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+                        } else { //object goes out of view (scrolling up)
+                        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+                        }
+                    });
+                    $("#button2").each(function() {
+                      /* Check the location of each desired element */
+                      var objectBottom = $(this).offset().top + $(this).outerHeight();
+                      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+                      /* If the element is completely within bounds of the window, fade it in */
+                      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+                        } else { //object goes out of view (scrolling up)
+                        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+                        }
+                    });
+                    
+                    $("#footer").each(function() {
+                      /* Check the location of each desired element */
+                      var objectBottom = $(this).offset().top + $(this).outerHeight();
+                      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+                      /* If the element is completely within bounds of the window, fade it in */
+                      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+                        } else { //object goes out of view (scrolling up)
+                        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+                        }
+                    });            
+                    
+                }); $(window).scroll(); //invoke scroll-handler on page-load
+            });
+        </script>
+        <script>
+            $('.switch').hover(function() {
+                $(this).closest('#email').hide();
+                $(this).next('div').closest('#contact').show();
+            }, function() {
+                $(this).next('div').closest('#contact').hide();
+                $(this).closest('#email').show();
+            });            
+        </script>
+        
+	</head>
+	
+	
+	<body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+		<img alt="full screen background image" src="background2.jpg" id="full-screen-background-image"> 
+		<div class="jumbotron">
+				<h1>Welcome to GenePool</h1>
+				<p>An online health risk calculator.</p>
+		</div>
+			<div class="container-fluid">
+				<ul>
+					<li> <a class="active" href="home.html">GenePool </a></li>
+					<li> <a href="aboutusnew.html">About Us </a></li>
+					<a type="button" class="btn btn-info" href= "working_form.html" id="start_header_button">Get Started</a>
+				</ul>
+			</div>
+		<div class="container">
+			<img id="logoPic" src= "logo.png" alt="GenePool Logo" style= "width:400px;height:500px;">
+			<h2 class = "webelieve">We believe in Health </h2>
+			<h2 class = "webelieve"> We believe in Prevention </h2>
+			<h2 class = "webelieve"> We believe in Solutions </h2>
+			<button id = "button2" onclick="location.href='working_form.html';" value="Get Started">Start Personalized Diagnosis</button> 
+			<br>
+			
+		</div>
+        
+        
+        <!--<div class="footer">
+            <ul>
+                <li class = "col-sm-4"> <div>Genepool</div></li>
+				<li class = "col-sm-4"> <a href="mailto:genepoolhealth@gmail.com" target="_top">Contact Us</a>
+                <li class = "col-sm-4"> <div> Proudly designed in San Francisco, CA</div></li>
+            </ul>
+        </div>-->
+        <div id = "footer">
+            <a href="mailto:genepoolhealth@gmail.com" target="_top"><h1>Questions?</h1></a>
+		</div>
+        
+        <div id = "sanfran">
+            <img id = "bridge" src="bridge.PNG">
+            <p id = "designed"> Proudly designed in San Francisco, CA</p>
+        </div>    
+        
+        <!--<div class="footer">
+				(comment out this set of div tags too) <div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-4" style="background-color:MediumSeaGreen;">Genepool</div>
+                        
+                        <div id= "contact">
+						  <div class="col-sm-4" style="background-color:MediumTurquoise;">Contact Us</div>
+                            <div id = "email">
+                                <a href="mailto:genepoolhealth@gmail.com" target="_top">genepoolhealth@gmail.com</a>
+                            </div>
+                        </div>    
+                        <div class="col-sm-4" style="background-color:Tomato;">San Francisco, CA</div>
+					</div>
+				</div>
+			</div>-->
+		
+	<!---<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.0/scrollreveal.min.js"></script>
+	+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>-->
+
+	</body>
+</html>

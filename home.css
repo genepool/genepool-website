@@ -1,0 +1,193 @@
+html, body {
+  height: 100%;
+}
+.jumbotron{
+	margin-bottom: 0px;
+	color:#666666;
+	text-align: center;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container-fluid{
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}	
+/*#logoPic{
+	float:right;
+}	
+#logopic2{
+	float: left;
+}*/
+	
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d5dddd;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ a:hover:not(.active) {
+    background-color: #8c8c8c;
+}
+
+.active {
+    background-color: #8c8c8c;
+}
+
+
+
+#results_heading {
+	float: center;
+	font-size: 48px;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+#start_header_button{
+	float: right;	
+	margin-top:7px;
+	margin-right: 10px;
+}
+
+.webelieve{
+	font-family: 'Merriweather Sans', sans-serif;
+	text-align: center;
+    padding: 10px;
+    opacity: 1;
+	
+}
+
+img{
+	border-radius: 8px;
+	display: block;
+	margin: auto;
+	width: 30%;
+    object-fit: cover;
+	
+}
+#logoPic {
+	border-radius: 8px;
+	display: block;
+	margin: auto;
+	width: 30%;
+	height: 60%;
+    object-fit: cover;
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+
+
+#full-screen-background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.footer {
+  right: 0;
+  bottom:0;
+  left: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 0;
+  background-color: #efefef;
+  text-align: center;
+}
+#button2{
+	background-color: #48C9B0;
+	font-family: 'Merriweather Sans', sans-serif;
+	height: 40px;
+	margin: 0 auto;
+	margin-left: 470px;
+	float: left;
+}
+
+a:hover {
+background:#ffffff; 
+text-decoration:none;
+} 
+
+.col-sm-4 {
+    color: white;
+    top: 50%;
+    
+}
+
+#footer {
+    background-color: #666666;
+    margin-top: 80px;
+    height: 200px;
+	width: 100%;
+}
+
+#sanfran {
+    background-color: #555555;
+    width: 100%;
+    height: 400px;
+}
+
+#designed {
+    text-align: center;
+    color: white;
+}
+
+#bridge {
+    margin-bottom: 10px;
+}
+
+#submittag {
+	margin-left: 100px;
+}
+/*#email {
+    display: none;
+    position: absolute;
+    height:10%;
+    width:40%;
+    padding:0;
+    margin:0;
+    display: inline;
+}
+
+#contact {
+    height: 100%;
+    width: 100%;
+}
+
+#contact:hover > #email{
+    display: block;
+}*/
